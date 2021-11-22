@@ -38,12 +38,6 @@ words = sorted(list(set(words)))
 # remove duplicates
 classes = sorted(list(set(classes)))
 
-'''
-print (len(documents), "documents")
-print (len(classes), "classes", classes)
-print (len(words), "unique stemmed words", words)
-'''
-
 # create our training data
 training = []
 output = []
@@ -78,6 +72,7 @@ train_y = list(training[:,1])
 
 # reset underlying graph data
 tf.compat.v1.reset_default_graph()
+
 # Build neural network
 net = tflearn.input_data(shape=[None, len(train_x[0])])
 net = tflearn.fully_connected(net, 8)
