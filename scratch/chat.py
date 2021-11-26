@@ -1,7 +1,5 @@
-from enum import IntEnum
 import random
 import json
-from nltk import probability
 
 import torch
 from model import NeuralNet
@@ -49,7 +47,7 @@ while True:
 
     if prob.item() > 0.75:
         for intent in intents['intents']:
-            if tag == intent['tag']:
+            if tag == intent['tag']:    
                 print(f'{bot_name}: {random.choice(intent["responses"])}')
     else:
-        print("Please can you refactor the question...")
+        print(f"{bot_name}: Please can you refactor the question...")
