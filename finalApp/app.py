@@ -1,6 +1,5 @@
 from logging import debug
 from flask import Flask, render_template, request, jsonify
-from werkzeug.wrappers import response
 
 from chat import get_response 
 
