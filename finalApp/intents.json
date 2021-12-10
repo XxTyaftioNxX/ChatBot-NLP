@@ -36,7 +36,7 @@
                       "can you do anything else?", "can I do something else here?", "hello what can you do for me", "I need help", 
                       "what can you help me with", "I need some help", " please help me", "problem", "What are my options", "What are you able to do?",                    
                       "What can you do for me?", "are there any other options?", "can I ask you anything else?"],
-          "responses": [""],                          
+          "responses": ["For now I can help you with tasks such as \n 1) Creating a new account \n 2) Applying for a new ATM card \n 3) Getting a new chequebook"],                          
           "context": [""]
         },
         {"tag": "check_human",
