@@ -39,52 +39,17 @@
           "responses": [""],                          
           "context": [""]
         },
-        {"tag": "adverse_drug",
-         "patterns": ["How to check Adverse drug reaction?", "Open adverse drugs module", "Give me a list of drugs causing adverse behavior", "List all drugs suitable for patient with adverse reaction", "Which drugs dont have adverse reaction?" ],
-         "responses": ["Navigating to Adverse drug reaction module"],
-         "context": [""]
-        },
-        {"tag": "blood_pressure",
-         "patterns": ["Open blood pressure module", "Task related to blood pressure", "Blood pressure data entry", "I want to log blood pressure results", "Blood pressure data management" ],
-         "responses": ["Navigating to Blood Pressure module"],
-         "context": [""]
-        },
-        {"tag": "blood_pressure_search",
-         "patterns": ["I want to search for blood pressure result history", "Blood pressure for patient", "Load patient blood pressure result", "Show blood pressure results for patient", "Find blood pressure results by ID" ],
-         "responses": ["Please provide Patient ID", "Patient ID?"],
-         "context": ["search_blood_pressure_by_patient_id"]
-        },
-        {"tag": "search_blood_pressure_by_patient_id",
-         "patterns": [],
-         "responses": ["Loading Blood pressure result for Patient"],
-         "context": [""]
-        },
-        {"tag": "pharmacy_search",
-         "patterns": ["Find me a pharmacy", "Find pharmacy", "List of pharmacies nearby", "Locate pharmacy", "Search pharmacy" ],
-         "responses": ["Please provide pharmacy name"],
-         "context": ["search_pharmacy_by_name"]
-        },
-        {"tag": "search_pharmacy_by_name",
-         "patterns": [],
-         "responses": ["Loading pharmacy details"],
-         "context": [""]
-        },
-        {"tag": "hospital_search",
-         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
-         "responses": ["Please provide hospital name or location"],
-         "context": ["search_hospital_by_params"]
-        },
         {"tag": "check_human",
          "patterns": ["are you a bot?", "am i speaking to an ai?", "are you a human or a bot?", "are you real?", "are you virtual?", 
                     "are you an ai?", "aren't you a bot", "are you a chatbot", "are you a real bot?", "are you a robot", "are you artificial",
                     "are you artificial intelligence", "are you real", "are you really a bot", "are you sure that you're a bot?", "bot?",
                     "are you robot", "are you ai", "are you a human?", "am I talking to a bot?", "am I talking to a human?", "you are a bot right", 
                     "i guess you are a chatbot", "tell me, are you a bot?", "you are chatbot", "real bot then?"],
-         "responses": [""],
+         "responses": ["No i am not a human.", "Sorry but i am AI. I can connect you to a human if you want."],
          "context": [""]
         },
         {"tag": "human_handoff",
-          "patterns": ["handoff", "operator", "I want a human", "can I speak to an agent", "real agent please", "real human", "can I talk to human?", 
+         "patterns": ["handoff", "operator", "I want a human", "can I speak to an agent", "real agent please", "real human", "can I talk to human?", 
                       "chat with a live agent", "give me a person please", "i want to talk to a human", "talk to human", "I need a real person", 
                       "connect me to a real person", "i want to talk to a real person", "let me speak to a real person please", "transfer to a human", 
                       "let me speak to a real person", "can i talk to human", " can i talk to a real person?", "i want to speak to human",
@@ -94,59 +59,61 @@
                       "do you have human support", "i dont wanna talk to a bot", "i want to speak to a real person", "i want to speak to customer service",
                       "let me speak with a real person please", "someone from customer care", "talking to a bot is stupid", "How do I talk to a human", 
                       "talk with a human", "Can i talk to a human instead", "Can you get a human to assist me?"],
-          "responses": [""],
-          "context": [""]
-        },
-        {"tag": "ask_transfer_charge",
-          "patterns": ["Will I be charged for transferring money", "do transfers cost something?",
-            "is there a transfer charge?", "Is there a charge", "will i be charged for a transaction?",
-            "do xfers cost something?", "is there a transfer fee", "is there a xfer fee",
-            "how much is the transfer fee", "whats the cost of transferring money",
-            "what am I charged upon money transfer", "are you gonna bill me for this exchange",
-            "whats the xfer price for this account", "okay but how much to move this money?",
-            "how much is the fee to shift my money around",
-            "if I send money to someone will I be charged extra for that?",
-            "is there a charge when I send money to someone",
-            "what is the fee for sending money to someone else",
-            "I sent money to my friend will I be charged extra for that",
-            "what is the percentage fee for transactions to another person",
-            "are there any transaction fees or charges I should know about?", "tell me about transfer fees"],
-          "responses": ["There is no charge while transferring fund from your account to another account of the same bank but charges apply when you transfer it to a different bank."],
-          "context": [""]
+         "responses": ["I will be connecting you to a human shortly. Thank you for your patience."],
+         "context": [""]
         },
         {"tag": "problem_notification",
-          "patterns": ["My bank activity notification does not work",
-            "Why don't I receive my bank activity notification",
-            "My account notification system is broken.",
-            "How can I get account notification."],
+         "patterns": ["My bank activity notification does not work", "Why don't I receive my bank activity notification",
+                      "My account notification system is broken.", "How can I get account notification.", "account notification", "notification", "alert",
+                      "notification is not working", "not recieving notification"],
           "responses": ["First you need to have a bank account and register your bank account to receive the notification."],
           "context": [""]
         },
         {"tag": "open_account",
-          "patterns": ["How do I open a bank account?",
-            "I need to open a bank account.",
-            "What is the procedure of opening a bank account.",
-            "can I open a bank account online?"],
+         "patterns": ["How do I open a bank account?", "I need to open a bank account.", "What is the procedure of opening a bank account.",
+                      "can I open a bank account online?", "create new bank account", "create bank account", "bank account", 
+                      "How do I make a new account", "new account", "Can you help me make a new account", "Making a new account", 
+                      "What do i need to do to make a new account", "Steps to make a new account", "What steps should I take to make a new account?"],
           "responses": ["You can open bank account online as well as in person from our different branches all over Nepal. All you need is a proof of identification(citizenship or passport) and 3 passport sized photo. We will be looking forward to welcome you into our family :)."],
           "context": [""]
         },
         {"tag": "location",
-          "patterns": ["Where are your branchs located?", "Where can I find your branches?", "Are there branches in where I live?", "How many branches are there in Nepal?"],
+         "patterns": ["Where are your branchs located?", "Where can I find your branches?", "Are there branches in where I live?", 
+                      "How many branches are there in Nepal?", "branches"],
           "responses": ["There are 15 branches all over Nepal in all the major cities like Kathmandu, Chitwan, Bhairahawa, Dharan etc. Why dont you see our website to see which location suits you the best at www.bank.com?"],
           "context": [""]
         },
         {"tag": "interest_rate",
-          "patterns": ["What sort of interest do you provide?",
-            "What is the interest rate?",
-            "How much interest do you give on a savings account?",
-            "What is the annual interest rate?",
-            "Rate of interest"],
+         "patterns": ["What sort of interest do you provide?", "What is the interest rate?", "How much interest do you give on a savings account?",
+                      "What is the annual interest rate?", "Rate of interest", "what is your interest rate", 
+                      "Do you know about the interest rates?"],
           "responses": ["We provide an interest of 6% on savings account and 10% on fixed deposit. The interest rates can change according to the market."],
           "context": [""]
-
+        },
+        {
+         "tag":"bank_app",
+         "patterns": ["How do i get the banking App", "Where to get the banking Application", "How do i download the Banking Apllication", 
+                      "How do i get the banking application", "Do you have banking app?", "application", "bank application", "install bank app", 
+                      "get bank app", "download bank app"],
+          "responses":["You may download the application from the playstore at googleplay.dummy.bank"],
+          "context":[""]
+        },
+        {
+          "tag": "new_card",
+         "patterns": ["How do I make a new ATM card?", "How to make an atm card", "Need to make an ATM card", "New ATM card needed", 
+                      "Make me an ATM card", "I need an atm card", "What should I do to get a new ATM card", "do you know how to get a new ATM card?",
+                      "new ATM card", "ATM card", "get new card"],
+         "responses":["To make a new ATM card, you can fill out the form at www.bankFormAtm.com, we will send you an email once it is ready to pick up"],
+         "context":[""]   
+        },
+        {
+        "tag": "chequebook",
+        "patterns": ["How do I make a new chequebook?", "How to make a chequebook", "Need to make a cheque book", "cheque book needed", 
+                    "Make me a cheque book", "I need a cheque book", "What should I do to get a new cheque book", "check",
+                    "what is a price to make a cheque book", "cost of cheque book", "get new checkbook", "checkbook", "cheque"],
+        "responses": "To make a new cheque book, you can fill out the form at www.bankFormcheque.com, the site will send you an email once it's ready to pick up,it costs 100 nrs to make a new one",   
+        "context":[""]
         }
-
-
    ]
 }
 
