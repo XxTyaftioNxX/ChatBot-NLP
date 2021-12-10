@@ -57,31 +57,3 @@ if __name__ == "__main__":
 
         resp = get_response(sentence)
         print(resp)
-
-'''
-# add an exit mechanism
-print('How can i help you today?')
-while True:
-    sentence =  input('You: ')
-
-    sentence = tokenize(sentence)
-    X = bag_of_words(sentence, all_words)
-    X = X.reshape(1, X.shape[0])
-
-    X = torch.from_numpy()
-
-    output = model(X)
-    _, predicted = torch.max(output, dim=1)
-
-    tag = tags[predicted.item( )]
-
-    probs = torch.softmax(output, dim = 1) 
-    prob = probs[0][predicted.item()]
-
-    if prob.item() > 0.75:
-        for intent in intents['intents']:
-            if tag == intent['tag']:    
-                print(f'{bot_name}: {random.choice(intent["responses"])}')
-    else:
-        print(f"{bot_name}: Please can you refactor the question...")
-'''
