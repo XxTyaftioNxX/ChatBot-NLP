@@ -4,7 +4,6 @@
                       "hello are you still there", "hallo", "hello there", "howdy", "hola", "greetings", "Hi, bot", "Hieeeee", "What is up?",
                       "Whats up", "ayyyy whaddup", "Namaste", "Well hello there", "helllloooo"],                    
          "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
         },
         {"tag": "goodbye",
          "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time", "i'm done", "bye", "Adios", "ok i gtg",
@@ -12,14 +11,12 @@
                       "goodbye", "bye for now", "bye bye bot", "Thanks a lot. See ya later", "quit", "stop", "cya", "see you around",  
                       "see you later", "buh bye", "good bye", "ok Bye", "see u later", "take care"],
          "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
         },
         {"tag": "thanks",
          "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me", "thank you goodbye", "Thanks!",
                       "okay thank you goodbye", "thank you bye", "um okay thank you good bye", "okay thank you", "thanks goodbye", "great!",
                       "I see, thanks", "Oh thats good!", "good job bot", "thanks for the help", "thanks for your information"],
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
         },
         {"tag": "out_of_scope",
          "patterns": ["what is the square root of 5", "I want to know the weather", "what is the meaning of life", "Fridge Isn't Running", 
@@ -27,7 +24,6 @@
                       "I want to order a pizza", "what is the weather today", "what is the weather", "tell me a joke", "Can I get a hamburger?",
                       "Can you call me back ?", "Can you give me your datacenter's password", "Can you please send me an uber"],
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
         },
         {"tag": "options",
          "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?",  "help", "help me",
@@ -36,17 +32,16 @@
                       "can you do anything else?", "can I do something else here?", "hello what can you do for me", "I need help", 
                       "what can you help me with", "I need some help", " please help me", "problem", "What are my options", "What are you able to do?",                    
                       "What can you do for me?", "are there any other options?", "can I ask you anything else?"],
-          "responses": ["For now I can help you with tasks such as \n 1) Creating a new account \n 2) Applying for a new ATM card \n 3) Getting a new chequebook"],                          
-          "context": [""]
-        },
+          "responses": ["For now I can help you with tasks such as \n 1) Creating a new account \n 2) Applying for a new ATM card \n 3) Getting a new chequebook"]
+                },
         {"tag": "check_human",
          "patterns": ["are you a bot?", "am i speaking to an ai?", "are you a human or a bot?", "are you real?", "are you virtual?", 
                     "are you an ai?", "aren't you a bot", "are you a chatbot", "are you a real bot?", "are you a robot", "are you artificial",
                     "are you artificial intelligence", "are you real", "are you really a bot", "are you sure that you're a bot?", "bot?",
                     "are you robot", "are you ai", "are you a human?", "am I talking to a bot?", "am I talking to a human?", "you are a bot right", 
                     "i guess you are a chatbot", "tell me, are you a bot?", "you are chatbot", "real bot then?"],
-         "responses": ["No i am not a human.", "Sorry but i am AI. I can connect you to a human if you want."],
-         "context": [""]
+         "responses": ["No i am not a human.", "Sorry but i am AI. I can connect you to a human if you want."]
+         
         },
         {"tag": "human_handoff",
          "patterns": ["handoff", "operator", "I want a human", "can I speak to an agent", "real agent please", "real human", "can I talk to human?", 
@@ -59,60 +54,60 @@
                       "do you have human support", "i dont wanna talk to a bot", "i want to speak to a real person", "i want to speak to customer service",
                       "let me speak with a real person please", "someone from customer care", "talking to a bot is stupid", "How do I talk to a human", 
                       "talk with a human", "Can i talk to a human instead", "Can you get a human to assist me?"],
-         "responses": ["I will be connecting you to a human shortly. Thank you for your patience."],
-         "context": [""]
+         "responses": ["I will be connecting you to a human shortly. Thank you for your patience."]
+         
         },
         {"tag": "problem_notification",
          "patterns": ["My bank activity notification does not work", "Why don't I receive my bank activity notification",
                       "My account notification system is broken.", "How can I get account notification.", "account notification", "notification", "alert",
                       "notification is not working", "not recieving notification"],
-          "responses": ["First you need to have a bank account and register your bank account to receive the notification."],
-          "context": [""]
+          "responses": ["First you need to have a bank account and register your bank account to receive the notification."]
+          
         },
         {"tag": "open_account",
          "patterns": ["How do I open a bank account?", "I need to open a bank account.", "What is the procedure of opening a bank account.",
                       "can I open a bank account online?", "create new bank account", "create bank account", "bank account", 
                       "How do I make a new account", "new account", "Can you help me make a new account", "Making a new account", 
                       "What do i need to do to make a new account", "Steps to make a new account", "What steps should I take to make a new account?"],
-          "responses": ["You can open bank account online as well as in person from our different branches all over Nepal. All you need is a proof of identification(citizenship or passport) and 3 passport sized photo. We will be looking forward to welcome you into our family :)."],
-          "context": [""]
+          "responses": ["You can open bank account online as well as in person from our different branches all over Nepal. All you need is a proof of identification(citizenship or passport) and 3 passport sized photo. We will be looking forward to welcome you into our family :)."]
+     
         },
         {"tag": "location",
          "patterns": ["Where are your branchs located?", "Where can I find your branches?", "Are there branches in where I live?", 
                       "How many branches are there in Nepal?", "branches"],
-          "responses": ["There are 15 branches all over Nepal in all the major cities like Kathmandu, Chitwan, Bhairahawa, Dharan etc. Why dont you see our website to see which location suits you the best at www.bank.com?"],
-          "context": [""]
+          "responses": ["There are 15 branches all over Nepal in all the major cities like Kathmandu, Chitwan, Bhairahawa, Dharan etc. Why dont you see our website to see which location suits you the best at www.bank.com?"]
+         
         },
         {"tag": "interest_rate",
          "patterns": ["What sort of interest do you provide?", "What is the interest rate?", "How much interest do you give on a savings account?",
                       "What is the annual interest rate?", "Rate of interest", "what is your interest rate", 
                       "Do you know about the interest rates?"],
-          "responses": ["We provide an interest of 6% on savings account and 10% on fixed deposit. The interest rates can change according to the market."],
-          "context": [""]
+          "responses": ["We provide an interest of 6% on savings account and 10% on fixed deposit. The interest rates can change according to the market."]
+          
         },
         {
          "tag":"bank_app",
          "patterns": ["How do i get the banking App", "Where to get the banking Application", "How do i download the Banking Apllication", 
                       "How do i get the banking application", "Do you have banking app?", "application", "bank application", "install bank app", 
                       "get bank app", "download bank app"],
-          "responses":["You may download the application from the playstore at googleplay.dummy.bank"],
-          "context":[""]
+          "responses":["You may download the application from the playstore at googleplay.dummy.bank"]
+         
         },
         {
           "tag": "new_card",
          "patterns": ["How do I make a new ATM card?", "How to make an atm card", "Need to make an ATM card", "New ATM card needed", 
                       "Make me an ATM card", "I need an atm card", "What should I do to get a new ATM card", "do you know how to get a new ATM card?",
                       "new ATM card", "ATM card", "get new card"],
-         "responses":["To make a new ATM card, you can fill out the form at www.bankFormAtm.com, we will send you an email once it is ready to pick up"],
-         "context":[""]   
+         "responses":["To make a new ATM card, you can fill out the form at www.bankFormAtm.com, we will send you an email once it is ready to pick up"]
+        
         },
         {
         "tag": "chequebook",
         "patterns": ["How do I make a new chequebook?", "How to make a chequebook", "Need to make a cheque book", "cheque book needed", 
                     "Make me a cheque book", "I need a cheque book", "What should I do to get a new cheque book", "check",
                     "what is a price to make a cheque book", "cost of cheque book", "get new checkbook", "checkbook", "cheque"],
-        "responses": "To make a new cheque book, you can fill out the form at www.bankFormcheque.com, the site will send you an email once it's ready to pick up,it costs 100 nrs to make a new one",   
-        "context":[""]
+        "responses": ["To make a new cheque book, you can fill out the form at www.bankFormcheque.com, the site will send you an email once it's ready to pick up,it costs 100 nrs to make a new one"]
+       
         }
    ]
 }
